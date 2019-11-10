@@ -1,6 +1,6 @@
 {
   "name": "typography-options-type",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "OptionsType which is useful for typography theme using typography.js",
   "main": "index.js",
   "repository": "https://github.com/IsAmrish/typography-options-type.git",
@@ -13,7 +13,7 @@
     "flow": "flow",
     "build": "yarn run clean && flow-copy-source src dist/flow/ && yarn run rename",
     "rename": "mkdirp dist/js/ && cp dist/flow/index.js.flow dist/js/index.js && cp dist/flow/GoogleFontsType.js.flow dist/js/GoogleFontsType.js && cp dist/flow/VerticalRhythmType.js.flow dist/js/VerticalRhythmType.js",
-    "learn:pkg": "cp -R dist/* packages/typography-options-type/",
+    "lerna:pkg": "cp -R dist/* packages/typography-options-type/",
     "publish" : "lerna publish"
   },
   "dependencies": {
@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "lerna": "^3.18.4"
+  },
+  "publishConfig" : {
+    "access" : "public"
   }
 }
