@@ -13,7 +13,8 @@
     "flow": "flow",
     "build": "yarn run clean && flow-copy-source src dist/flow/ && yarn run rename",
     "rename": "mkdirp dist/js/ && cp dist/flow/index.js.flow dist/js/index.js && cp dist/flow/GoogleFontsType.js.flow dist/js/GoogleFontsType.js && cp dist/flow/VerticalRhythmType.js.flow dist/js/VerticalRhythmType.js",
-    "learn:pkg": "cp -R dist/* packages/typography-options-type/"
+    "learn:pkg": "cp -R dist/* packages/typography-options-type/",
+    "publish" : "lerna publish"
   },
   "dependencies": {
     "flow-copy-source": "^2.0.8",
